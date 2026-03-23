@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* Select por tag, nesse caso a tag body */
+body{
+    background-color: azure;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+}
+
+/* seleciona por id */
+#topo{
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* Seleciona por class */
+.descrição{
+    font-style: italic;
+}
+
+
+/* Estiliza os elementos com a class bloco */
+.bloco{
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.destaque{
+    background-color: gold;
+}
+/* Estiliza elementos com class texto-destaque */
+
+.texto.destaque{
+    font-weight: bold;
+    color: darkred;
+}
+
+/* Estiliza o elemento com id caixa-unica */
+#caixa-unica{
+    background-color: lightgray;
+    padding: 20px;
+    border: 2px solid purple;
+}
+    /* Selecina tudo o p que esteja dentro de uma div */
+div p {
+    color: blue;
+}
+
+    /* Selecina tudo o que o filho direito da
+    class especificada */
+.pai-direto > p {
+    color: green;
+    padding: 5px;
+}
+
+ /* Seleciona o p que vem lgo apos de um h3, desde que seja irmao */
+h3 + p {
+    color: red;
+    font-weight: bold;
+}
+/* Seleciona TODOS os p q vem logo após um h4 que seja irmaos */
+h4 ~ p {
+    background-color: blueviolet;
+    color: yellow;
+}
+
+input{
+    border: 2px solid orange;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+a[href= "google"] {
+    color: green;
+    font-weight: 50px;
+}

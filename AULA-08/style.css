@@ -1,0 +1,164 @@
+/* IMPORTAÇÃO DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+@font-face{
+    src: url("fontes/FONTES/Playwrite.ttf");
+    font-family: "playwrite";
+}
+
+p{
+    font-family: "playwrite";
+    color: darkblue;
+    font-size: 15px;
+}
+
+/* usando a fonte importando pelo link */
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+/* Estilizei por tag */
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: black;
+}
+    /* Estilizei dois elemnetos ao mesmo tempo */
+h1,h2{
+    color: #1f3c88;
+}
+
+/* Seletor de classe */
+.bloco{
+    background-color: white;
+    border: 2px solid gray;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* PSEUDO CLASSE */
+a:link{
+    color: blue;
+}
+
+a:visited{
+    color: purple;
+}
+
+    /* Estiliza links quando ´passa o mouse
+    emcima */
+a:hover{
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* Estiliza links quando e clicado */
+a:active{
+    color: green;
+}
+
+    /* Estiliza o botão quando passar o mouse em cima */
+button:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+button:active{
+    transform: scaleX(1.2);
+    transform: scaleY(1.7);
+}
+    /* Estiliza o input quando estou mexendo em
+    um especifico */
+input:focus{
+    outline: none;
+    border: 2px solid yellow;
+    background-color: azure;
+}
+/* Estiliza o input obrigatorio */
+ input:required{
+    border: 2px solid red
+    
+}
+
+input:valid{
+    background-color: #ecfd45;
+}
+
+input:invalid{
+    background-color: #fef2f2;
+}
+
+input:checked{
+    accent-color: green;
+}
+
+input:disabled{
+    background-color: #f4f4f4;
+    color: #1f3c88;
+}
+
+
+.lista-exemplo li:first-child{
+    font-weight: bold;
+    color: green;
+}
+
+/* Seleciona o ultimo filho */
+.lista-exemplo li:last-child{
+    color: red;
+}
+/* Seleciona algum filho */
+.lista-exemplo li:nth-child(3){
+    background-color: #fef3c7;
+}
+
+.caixa-vazia:empty{
+    width: 200px;
+    height: 60px;
+    background-color: #fef2f2;
+    border: red;
+}
+
+/* PSEUDO ELEMENTOS */
+/* insere conteudo antes de algum
+elementos */
+
+h2::before{
+    content: "star";
+    color: #fef3c7;
+}
+
+h2::after{
+    content: "star";
+    color: green;
+}
+
+input::-moz-placeholder{
+    color: black;
+    font-style: italic;
+}
+
+::selection{
+    background-color: #fef2f2;
+    color: green;
+    font-size: bold;
+
+}
+
+
+.lista-maker li::marker{
+    color: red;
+    font-size: 20px;
+}
